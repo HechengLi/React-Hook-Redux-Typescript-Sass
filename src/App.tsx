@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { AppState } from './store';
+import { AppState } from '@/store';
 
-import { SystemState } from './store/system/types';
-import { updateSession } from './store/system/actions';
+import { SystemState } from '@/store/system/types';
+import { updateSession } from '@/store/system/actions';
 
-import { ChatState } from './store/chat/types';
-import { sendMessage } from './store/chat/actions';
+import { ChatState } from '@/store/chat/types';
+import { sendMessage } from '@/store/chat/actions';
 
-import ChatHistory from './ChatHistory';
-import ChatInterface from './ChatInterface';
+import ChatHistory from '@/components/ChatHistory';
+import ChatInterface from '@/components/ChatInterface';
 
-import { thunkSendMessage } from './thunks';
+import { thunkSendMessage } from '@/thunks';
 
 interface AppProps {
   sendMessage: typeof sendMessage

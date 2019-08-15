@@ -38,5 +38,6 @@
   ],
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./paths.json"
 }

@@ -1,7 +1,7 @@
 import { Action } from 'redux';
 import { ThunkAction } from 'redux-thunk';
-import { sendMessage } from './store/chat/actions';
-import { AppState } from './store';
+import { sendMessage } from '@/store/chat/actions';
+import { AppState } from '@/store';
 
 export const thunkSendMessage = (
   message: string
